@@ -38,6 +38,10 @@
 		setHumanReadableSizeToElement("dataBaseSize");
 		setHumanReadableSizeToElement("phpMemLimit");
 		setHumanReadableSizeToElement("phpUploadMaxSize");
+		
+		$("#monitoring-endpoint-url").on('click', function() {
+                        $(this).select();
+                });
 
 		function updateInfo() {
 			var url = OC.generateUrl('/apps/serverinfo/update');
